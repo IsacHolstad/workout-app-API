@@ -12,10 +12,11 @@ async function workoutPlace () {
         console.log(workoutData);
         for (let i = 0; workoutData.length; i++){
             console.log(workoutData[i].results)
+            container.innerHTML += `<li>${responseJSON[i].results.name}</li>`
         }
     }
     catch(error){
-        container.innerHTML = `<h1>404</h1>`
+        container.innerHTML += `<h1>404</h1>`
     }
 
 
