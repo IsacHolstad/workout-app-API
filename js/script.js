@@ -1,10 +1,12 @@
 const apiURL = "https://wger.de/api/v2/exercisecategory/?format=json";
 console.log(apiURL)
+const proxy = "https://noroffcors.herokuapp.com/";
+const corsFixUrl = proxy + apiURL;
 const container = document.querySelector(".container");
 
 async function workoutPlace () {
     try{
-        const response = await fetch(apiURL)
+        const response = await fetch(corsFixUrl)
         console.log(response)
         const responseJSON = await response.json();
         console.log(responseJSON);
