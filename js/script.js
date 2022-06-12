@@ -10,9 +10,9 @@ async function workoutPlace () {
         console.log(responseJSON);
         const workoutData = responseJSON.data;
         console.log(workoutData);
-        for (let i = 0; workoutData.length; i++){
-            console.log(workoutData[i].results)
-            container.innerHTML += `<li>${responseJSON[i].results.name}</li>`
+        for (let i = 0; i < responseJSON.length; i++){
+            console.log(responseJSON[i].results.name)
+            container.innerHTML += `<li>${responseJSON[i].results.name}</li>`;
         }
     }
     catch(error){
