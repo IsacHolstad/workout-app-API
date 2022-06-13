@@ -17,7 +17,7 @@ async function workoutNames() {
         for (let i = 0; i < responseJSON.length; i++) {
             console.log(responseJSON[i].results.name)
             
-            container.innerHTML += `<li><a href="detailcrypto.html?id=${cryptoData[i].id}">${cryptoData[i].id} ${cryptoData[i].supply}</a></li>`;
+            container.innerHTML += `<li>${responseJSON[i].results.name}</li>`;
         }
     }
     catch(error) {
