@@ -10,6 +10,7 @@ img{
     height: 25px;
     background-color: red;
     position: relative;
+    margin: auto;
     top: 5px;
     color: black;
 }
