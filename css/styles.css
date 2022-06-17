@@ -16,7 +16,11 @@ body{
 
 .workout-list{
     list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid white;
 }
+
 
 .error-message{
     list-style-type: none;
