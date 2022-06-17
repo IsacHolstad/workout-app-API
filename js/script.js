@@ -8,16 +8,16 @@ const cryptoContainer = document.querySelector(".container");
 
 async function workoutNames() {
     try{
-        const response = await fetch(corsFixUrl);
+        const response = await fetch(apiURL);
         console.log(response)
         const responseJSON = await response.json();
         console.log(responseJSON)
         const cryptoData = responseJSON.results;
         console.log(cryptoData)
         for (let i = 0; i < cryptoData.length; i++) {
-            console.log(cryptoData[i].results.id);
+            console.log(cryptoData[i].results);
             
-            container.innerHTML += `<li>${cryptoData[i].results.id}</li>`;
+            container.innerHTML += `<li class="workout-list">${cryptoData[i].results}</li>`;
         }
     }
     catch(error) {
