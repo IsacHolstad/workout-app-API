@@ -6,7 +6,7 @@ const container = document.querySelector(".container");
 
 const cryptoContainer = document.querySelector(".container");
 
-async function workoutNames() {
+(async function workoutNames() {
     try{
         const response = await fetch(apiURL);
         console.log(response)
@@ -25,4 +25,4 @@ async function workoutNames() {
        
     }
 }
-workoutNames();
+)();
