@@ -17,7 +17,7 @@ async function workoutNames() {
         for (let i = 0; i < cryptoData.length; i++) {
             console.log(cryptoData[i].results);
             
-            container.innerHTML += `<li class="workout-list">${cryptoData[i].results}</li>`;
+            container.innerHTML += `<li class="workout-list">${cryptoData[i].name} </li>`;
         }
     }
     catch(error) {
