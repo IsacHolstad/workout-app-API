@@ -2,18 +2,18 @@
     margin: 0 auto;
     padding: 0 auto;
 }
-img{
-    width: 100%;
+
+body{
+    color: white;
+    background-color: black;
+    font-size: 25px;
 }
+
 .container{
-    width: 300px;
-    height: 200px;
-    background-color: red;
-    position: relative;
-    margin: auto;
-    top: 5px;
-    color: black;
+    text-align: center;
+    padding-top: 55px;
 }
+
 .error-message{
     list-style-type: none;
     text-align: center;
