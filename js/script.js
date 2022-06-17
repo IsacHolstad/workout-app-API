@@ -1,6 +1,7 @@
 const apiURL = "https://wger.de/api/v2/exercisecategory/?format=json&=cdbdf424b250d470cd66c299d69a3d47c6eba32c";
 console.log(apiURL)
 
+
 const container = document.querySelector(".container");
 const cryptoContainer = document.querySelector(".container");
 
@@ -15,7 +16,7 @@ const cryptoContainer = document.querySelector(".container");
         for (let i = 0; i < cryptoData.length; i++) {
             console.log(cryptoData[i].results);
         
-            container.innerHTML += `<li class="workout-list"><a href="detail-workout.html?id=${cryptoData[i].name}"</a>${cryptoData[i].name}</li>`;
+            container.innerHTML += `<li class="workout-list"><a href="detail-workout.html?id=${cryptoData[i].name} ${cryptoData[i].id}"</a>${cryptoData[i].name}</li>`;
         }
     }
     catch(error) {
