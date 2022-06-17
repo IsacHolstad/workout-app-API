@@ -15,7 +15,7 @@ const cryptoContainer = document.querySelector(".container");
         for (let i = 0; i < cryptoData.length; i++) {
             console.log(cryptoData[i].results);
         
-            container.innerHTML += `<li class="workout-list">${cryptoData[i].name} </li>`;
+            container.innerHTML += `<li class="workout-list"><a href="detail-workout.html?id=${cryptoData[i].name}"</a>${cryptoData[i].name}</li>`;
         }
     }
     catch(error) {

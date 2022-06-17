@@ -18,9 +18,13 @@ body{
     list-style-type: none;
     padding: 10px;
     margin: 20px;
+    text-decoration: none;
     border: 1px solid white;
 }
-
+.workout-list a{
+    text-decoration: none;
+    color: white;
+}
 
 .error-message{
     list-style-type: none;
